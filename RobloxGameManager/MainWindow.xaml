@@ -1,0 +1,21 @@
+﻿<Window x:Class="RobloxGameManager.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RobloxGameManager"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Label x:Name="label" Content="Roblox Game/Experience URL or game ID" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txbURL" HorizontalAlignment="Left" Height="23" Margin="10,45.96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="400"/>
+        <Button x:Name="btnDownload" Content="&amp;Download" HorizontalAlignment="Right" Margin="0,45.96,282,0" VerticalAlignment="Top" Width="90" Height="23" Click="btnDownload_Click"/>
+        <Label x:Name="lblGameTitle" Content="[Game Title]" Margin="420,78.96,0,0" VerticalAlignment="Top" FontSize="20" HorizontalAlignment="Left"/>
+        <TextBox x:Name="txbOutput" Margin="10,0,5,5" TextWrapping="Wrap" Height="101.04" VerticalAlignment="Bottom"/>
+        <Image x:Name="imgGameThumb" Margin="10,78.96,0,0" HorizontalAlignment="Left" Width="400" Height="224" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
